@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Roboto', sans-serif; 
+    font: 1em
+}
+
+h2, h4, h6 {
+    color: azure;
+}
+
+i{
+    font-size: 4em;
+}
+
+body {
+    background-color: blue;
+}
+
+div{
+    display: inline-block;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+#div1 {
+    font-weight: bold;
+}
+
+div.rojo, .rojo {
+    background-color: red;
+    color: inherit;
+}
+
+.emoji{
+    width: 200px;
+    font-size: 200px
+}

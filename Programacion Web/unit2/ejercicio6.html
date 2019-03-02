@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>changoScript</title>
+</head>
+<body>
+    <h1 id="message"></h1>
+    <script>
+        let _age = prompt("How old eres?");
+        let age = Number(_age);
+        let banner = document.querySelector('#message');
+        if(isNaN(age)){
+            alert("Invalid age");
+        }
+        if(age >= 18){
+            banner.innerHTML = "You are legal";
+            document.body.style.background = '#FFF';
+            document.body.style.color = '#AAA';
+        } else {
+            banner.innerHTML = "You are morro";
+            document.body.style.background = '#FFF';
+            document.body.style.color = '#777';
+        }
+    </script>
+</body>
+</html>

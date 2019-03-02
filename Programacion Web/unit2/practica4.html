@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+</head>
+<style>
+    body{
+        margin-top: 10px;
+        display: flex; 
+    }
+    hr, p {
+        color: azure;
+        margin: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .myData {
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px grey;
+        width: 300px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: linear-gradient(16deg, #408ab4 80%, #34699a 80.1%); 
+    }
+    .myData .personalData {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 40% 60%; 
+    }
+    .myData .languages {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 40% 40%; 
+    }
+    .myData h1 {
+        margin-top: 10px;
+        color: azure; 
+    }
+    .myData h2 {
+        margin-top: 10px;
+        color: azure; 
+    }
+    .myData h3 {
+        margin-top: 10px;
+        color: azure; 
+    }
+    .myData h4 {
+        margin-top: 10px;
+        color: azure; 
+    }
+    .myData h5 {
+        margin-top: 10px;
+        color: azure; 
+    }
+    .myData h6 {
+        margin-top: 10px;
+        color: azure; 
+    }
+    .myData img {
+        align-self: center;
+        border-radius: 999px;
+        width: 160px; 
+    }
+    .academicData {
+        padding: 5px;
+        margin-left: 5px;
+        text-align: center; 
+    }
+    .academicData h1 {
+        text-align: center; 
+    }
+    .academicData h2 {
+        text-align: center; 
+    }
+    .academicData h3 {
+        text-align: center; 
+    }
+    .academicData .achievements {
+        text-align: start; 
+    }
+    .academicData .knowledge {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        text-align: start;
+        align-items: center; 
+    }
+    .academicData p {
+      color: black;
+      margin: 5px 0; 
+    }
+    .academicData hr {
+        border: 1px solid #34699a; 
+    }
+    .academicData h3 {
+        margin: 10px 0;
+        border-bottom: 1px solid #34699a;
+        display: inline-block;
+    }
+</style>
+<body>
+    <div class="myData">
+        <img src="http://tecvalles.mx/moodle/pluginfile.php/49385/user/icon/tecvalles/f1?rev=277902" alt="me"/>
+        <h3>Profile</h3>
+        <hr/>
+        <p>
+            I'm student of computer systems engineering career, where I learned to be autodidact student, the basic topics of programming, databases, electronic and networks.
+        </p>
+        <h3>Personal Data</h3>
+        <hr/>
+        <div class="personalData">
+            <p><b>Address: </b></p><p>1026 Reforma Street</p>
+            <p><b>Phone: </b></p><p>481-123-4567</p>
+            <p><b>E-mail:</b></p><p>15690213@tecvalles.mx</p>
+            <p><b>CURP: </b></p><p>ROLS970524HSPMRR01</p>
+            <p><b>RFC: </b></p><p>ROLS9705244V9</p>
+        </div>
+        <h3>Qualities</h3>
+        <hr/>
+        <p>
+            Quick adaptability with my teammates<br/>
+            Creative, efficient and punctual person
+        </p>
+        <h3>Languages</h3>
+        <hr/>
+        <div class="languages">
+            <p>Spanish: </p><p>Native</p>
+            <p>English: </p><p>70%</p>
+            <p>French: </p><p>1%</p>
+        </div>
+    </div>
+    <div class="academicData">
+        <h1>Sergio Romero L&aacute;rraga</h1>
+        <h2>Computer Systems Engineering Student</h2>
+        <hr/>
+        <h3>Knowledge</h3>
+        <div class="knowledge">
+            <p>Programming languages: </p><p>C++<br/>Python<br/>Javascript</p>
+            <p>Front-end frameworks: </p><p>React</p>
+            <p>Back-end frameworks: </p><p>Flask<br/>Django</p>
+            <p>Database manager: </p><p>MySQL<br/>MongoDB<br/>CouchDB</p>
+            <p>Image edition: </p><p>Photoshop</p>
+            <p>Video edition: </p><p>Sony Vegas</p>
+        </div>
+        <h3>Achievements</h3>
+        <div class="achievements">
+            <p>Participant in the National Student Event of Technological <br/> Innovation (ENEIT), with a mobile app called Notify.</p><br/>
+            <p>Participant in TuAppSanLuis 2018, a state entrepreneur competition <br/> where we participated with Notify app.</p>
+        </div>
+    </div>
+</body>
+</html>
