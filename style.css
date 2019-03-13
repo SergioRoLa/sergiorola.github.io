@@ -34,6 +34,109 @@
   100% {
     background-color: crimson; } }
 
+.practiceFour {
+  margin-top: 10px;
+  display: flex; }
+  .practiceFour hr, .practiceFour p {
+    color: azure; }
+  .practiceFour .myData {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px grey;
+    width: 300px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(16deg, #408ab4 80%, #34699a 80.1%); }
+    .practiceFour .myData .personalData {
+      text-align: start;
+      display: grid;
+      grid-template-columns: 40% 60%; }
+    .practiceFour .myData .languages {
+      text-align: start;
+      display: grid;
+      grid-template-columns: 40% 40%; }
+    .practiceFour .myData h1 {
+      margin-top: 10px;
+      color: azure; }
+    .practiceFour .myData h2 {
+      margin-top: 10px;
+      color: azure; }
+    .practiceFour .myData h3 {
+      margin-top: 10px;
+      color: azure; }
+    .practiceFour .myData h4 {
+      margin-top: 10px;
+      color: azure; }
+    .practiceFour .myData h5 {
+      margin-top: 10px;
+      color: azure; }
+    .practiceFour .myData h6 {
+      margin-top: 10px;
+      color: azure; }
+    .practiceFour .myData img {
+      align-self: center;
+      border-radius: 999px;
+      width: 160px; }
+  .practiceFour .academicData {
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center; }
+    .practiceFour .academicData h1 {
+      text-align: center; }
+    .practiceFour .academicData h2 {
+      text-align: center; }
+    .practiceFour .academicData h3 {
+      text-align: center; }
+    .practiceFour .academicData .achievements {
+      text-align: start; }
+    .practiceFour .academicData .knowledge {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      text-align: start;
+      align-items: center; }
+    .practiceFour .academicData p {
+      color: black;
+      margin: 5px 0; }
+    .practiceFour .academicData hr {
+      border: 1px solid #34699a; }
+    .practiceFour .academicData h3 {
+      margin: 10px 0;
+      border-bottom: 1px solid #34699a;
+      display: inline-block; }
+
+.practiceFive {
+  display: flex;
+  margin-top: 10px; }
+  .practiceFive .criba {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; }
+    .practiceFive .criba .square {
+      display: flex;
+      width: 4vw;
+      height: 4vw;
+      border-radius: 99px;
+      justify-content: center;
+      align-items: center; }
+    .practiceFive .criba .notPrime {
+      background: crimson; }
+    .practiceFive .criba .isMultiple {
+      background-color: #61DAFB; }
+  .practiceFive .options {
+    text-align: center;
+    margin-left: 2%;
+    width: 20%; }
+
+@keyframes blink {
+  0% {
+    background-color: crimson; }
+  50% {
+    background-color: #0b8457; }
+  100% {
+    background-color: crimson; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -246,78 +349,6 @@ code {
     color: azure; }
   .exerciseFive i {
     font-size: 4em; }
-
-.practiceFour {
-  margin-top: 10px;
-  display: flex; }
-  .practiceFour hr, .practiceFour p {
-    color: azure; }
-  .practiceFour .myData {
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px grey;
-    width: 300px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background: linear-gradient(16deg, #408ab4 80%, #34699a 80.1%); }
-    .practiceFour .myData .personalData {
-      text-align: start;
-      display: grid;
-      grid-template-columns: 40% 60%; }
-    .practiceFour .myData .languages {
-      text-align: start;
-      display: grid;
-      grid-template-columns: 40% 40%; }
-    .practiceFour .myData h1 {
-      margin-top: 10px;
-      color: azure; }
-    .practiceFour .myData h2 {
-      margin-top: 10px;
-      color: azure; }
-    .practiceFour .myData h3 {
-      margin-top: 10px;
-      color: azure; }
-    .practiceFour .myData h4 {
-      margin-top: 10px;
-      color: azure; }
-    .practiceFour .myData h5 {
-      margin-top: 10px;
-      color: azure; }
-    .practiceFour .myData h6 {
-      margin-top: 10px;
-      color: azure; }
-    .practiceFour .myData img {
-      align-self: center;
-      border-radius: 999px;
-      width: 160px; }
-  .practiceFour .academicData {
-    padding: 5px;
-    margin-left: 5px;
-    text-align: center; }
-    .practiceFour .academicData h1 {
-      text-align: center; }
-    .practiceFour .academicData h2 {
-      text-align: center; }
-    .practiceFour .academicData h3 {
-      text-align: center; }
-    .practiceFour .academicData .achievements {
-      text-align: start; }
-    .practiceFour .academicData .knowledge {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 60% 40%;
-      text-align: start;
-      align-items: center; }
-    .practiceFour .academicData p {
-      color: black;
-      margin: 5px 0; }
-    .practiceFour .academicData hr {
-      border: 1px solid #34699a; }
-    .practiceFour .academicData h3 {
-      margin: 10px 0;
-      border-bottom: 1px solid #34699a;
-      display: inline-block; }
 
 .view-content {
   width: 75%;
