@@ -129,19 +129,24 @@
     width: 20%; }
     .practiceFive .options .buttons {
       display: flex;
+      align-items: center;
       flex-direction: column; }
       .practiceFive .options .buttons button {
+        margin: 1% 0;
+        font-size: 1em;
+        border-radius: 999px;
         border: none;
-        width: 100%;
+        width: 20%;
         height: 30px; }
+      .practiceFive .options .buttons button:hover {
+        animation: moreSize 0.1s linear;
+        transform: scale(1.1); }
 
-@keyframes blink {
-  0% {
-    background-color: crimson; }
-  50% {
-    background-color: #0b8457; }
-  100% {
-    background-color: crimson; } }
+@keyframes moreSize {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
 
 * {
   margin: 0;
