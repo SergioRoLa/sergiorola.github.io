@@ -148,6 +148,110 @@
   to {
     transform: scale(1.1); } }
 
+.lottery .title {
+  font-size: 7vw;
+  background: linear-gradient(to right, crimson, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: iluminate 1.5s infinite linear; }
+
+.lottery .menuLottery {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .lottery .menuLottery button:active {
+    animation: changeSize 1s linear; }
+  .lottery .menuLottery button {
+    margin: 10px;
+    border: none;
+    border-radius: 99px;
+    color: white;
+    background-color: crimson;
+    padding: 10px; }
+  .lottery .menuLottery a:active {
+    animation: changeSize 1s linear; }
+  .lottery .menuLottery a {
+    text-decoration: none;
+    border-radius: 99px;
+    color: white;
+    background-color: crimson;
+    padding: 10px;
+    margin: 10px; }
+  .lottery .menuLottery .table {
+    position: absolute;
+    z-index: -1;
+    width: 15vw;
+    animation: rotationAndTranslation 3s infinite linear; }
+  .lottery .menuLottery .inputs .inputName label {
+    font-size: 120%; }
+  .lottery .menuLottery .inputs .inputName input {
+    border: none;
+    border-bottom: 2px solid crimson;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-size: 100%; }
+
+.gameBoard {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px; }
+  .gameBoard .tableBoard {
+    display: flex;
+    flex-direction: row; }
+    .gameBoard .tableBoard .table {
+      margin: 10px; }
+
+.gameTable {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%; }
+
+.showedCard {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4592af;
+  border-radius: 99px;
+  width: 10vw; }
+
+.cardSquare {
+  padding: 0;
+  width: 50px; }
+
+.isSelected {
+  animation: selected 0.5s linear;
+  filter: blur(1px) brightness(0.2); }
+
+@keyframes selected {
+  from {
+    filter: blur(0px) brightness(1); }
+  to {
+    filter: blur(1px) brightness(0.2); } }
+
+@keyframes iluminate {
+  from {
+    filter: hue-rotate(0deg); }
+  to {
+    filter: hue-rotate(360deg); } }
+
+@keyframes rotationAndTranslation {
+  0% {
+    transform: translate(-450%) rotate(0deg); }
+  50% {
+    transform: translate(450%) rotate(720deg); }
+  100% {
+    transform: translate(-450%) rotate(0deg); } }
+
+@keyframes changeSize {
+  0% {
+    transform: scale(0.9); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -244,6 +348,7 @@ code {
 
 #title1:checked ~ #list1-practices {
   opacity: 1;
+  text-align: center;
   animation: appear 0.4s linear; }
 
 #title1:not(:checked) ~ #list1-practices {
@@ -262,6 +367,7 @@ code {
 
 #title2:checked ~ #list2-practices {
   opacity: 1;
+  text-align: center;
   animation: appear 0.4s linear; }
 
 #title2:not(:checked) ~ #list2-practices {
@@ -280,6 +386,7 @@ code {
 
 #title3:checked ~ #list3-practices {
   opacity: 1;
+  text-align: center;
   animation: appear 0.4s linear; }
 
 #title3:not(:checked) ~ #list3-practices {
@@ -298,6 +405,7 @@ code {
 
 #title4:checked ~ #list4-practices {
   opacity: 1;
+  text-align: center;
   animation: appear 0.4s linear; }
 
 #title4:not(:checked) ~ #list4-practices {
