@@ -195,7 +195,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  text-align: center;
   margin: 20px; }
   .gameBoard .tableBoard {
     display: flex;
