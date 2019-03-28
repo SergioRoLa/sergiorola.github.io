@@ -224,6 +224,42 @@
   animation: selected 0.5s linear;
   filter: blur(1px) brightness(0.2); }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  animation: opacityZeroToOne 1s linear; }
+
+#popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out; }
+  #popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif; }
+  #popup .content {
+    max-height: 30%;
+    overflow: auto; }
+  #popup a {
+    border: 1px #bbbbbb solid;
+    border-radius: 99px;
+    margin: 8px 12px;
+    padding: 2px 15px;
+    color: black;
+    text-decoration: none; }
+
+.milos {
+  animation: rotationAndTranslation 5s linear infinite; }
+
 @keyframes selected {
   from {
     filter: blur(0px) brightness(1); }
@@ -238,11 +274,18 @@
 
 @keyframes rotationAndTranslation {
   0% {
-    transform: translate(-450%) rotate(0deg); }
+    transform: translate(-100%);
+    opacity: 0; }
+  25% {
+    opacity: 1; }
   50% {
-    transform: translate(450%) rotate(720deg); }
+    transform: translate(100%);
+    opacity: 0; }
+  75% {
+    opacity: 1; }
   100% {
-    transform: translate(-450%) rotate(0deg); } }
+    transform: translate(-100%);
+    opacity: 0; } }
 
 @keyframes changeSize {
   0% {
@@ -251,6 +294,14 @@
     transform: scale(1.1); }
   100% {
     transform: scale(1); } }
+
+@keyframes opacityZeroToOne {
+  from {
+    visibility: hidden;
+    opacity: 0; }
+  to {
+    visibility: visible;
+    opacity: 1; } }
 
 * {
   margin: 0;
