@@ -258,7 +258,7 @@
     text-decoration: none; }
 
 .milos {
-  animation: rotationAndTranslation 5s linear infinite; }
+  animation: milos 5s linear infinite; }
 
 @keyframes selected {
   from {
@@ -273,6 +273,14 @@
     filter: hue-rotate(360deg); } }
 
 @keyframes rotationAndTranslation {
+  0% {
+    transform: translate(-450%); }
+  50% {
+    transform: translate(450%); }
+  100% {
+    transform: translate(-450%); } }
+
+@keyframes milos {
   0% {
     transform: translate(-100%);
     opacity: 0; }
