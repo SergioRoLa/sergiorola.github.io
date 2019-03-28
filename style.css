@@ -274,11 +274,11 @@
 
 @keyframes rotationAndTranslation {
   0% {
-    transform: translate(-450%); }
+    transform: translate(-450%) rotate(0deg); }
   50% {
-    transform: translate(450%); }
+    transform: translate(450%) rotate(720deg); }
   100% {
-    transform: translate(-450%); } }
+    transform: translate(-450%) rotate(0deg); } }
 
 @keyframes milos {
   0% {
